@@ -30,30 +30,38 @@ function calculate() {
     let rY = 0;
     let rM = 0;
     let rD = 0;
-    if (y > cY) {
-        console.log("invalid DOB");
+    if (d && y && m) {
+        if (y > cY) {
+            console.log("invalid DOB");
+            const rSt = `Please Fill All The Field`
+            console.log(rSt);
+            res.innerHTML = rSt;
+        } else {
+            if (cD < d) {
+                // console.log(" d inc ...m dec")
+                cM = cM - 1;
+                cD = cD + 30;
+            }
+            if (cM < m) {
+                // console.log(" m inc ...y dec")
+                cY = cY - 1;
+                cM = cM + 12;
+                // console.log("cY==> " + cY)
+                // console.log("cM==> " + cM)
+            }
+            //calculate
+            // console.log(cY, cM, cD)
+            rY = cY - y;
+            rM = cM - m;
+            rD = cD - d;
+            // console.log(rY, rM, rD)
+            const rSt = `Your Age is ${rY} Years ${cM} Months ${cD} Days`
+            console.log(rSt);
+            res.innerHTML = rSt;
+        }
     } else {
-        if (cD < d) {
-            // console.log(" d inc ...m dec")
-            cM = cM - 1;
-            cD = cD + 30;
-        }
-        if (cM < m) {
-            // console.log(" m inc ...y dec")
-            cY = cY - 1;
-            cM = cM + 12;
-            // console.log("cY==> " + cY)
-            // console.log("cM==> " + cM)
-        }
-        //calculate
-        // console.log(cY, cM, cD)
-        rY = cY - y;
-        rM = cM - m;
-        rD = cD - d;
-        // console.log(rY, rM, rD)
-        const rSt = `Your Age is ${rY} Years ${cM} Months ${cD} Days`
+        const rSt = `Please Fill All The Field`
         console.log(rSt);
         res.innerHTML = rSt;
     }
-
 }
