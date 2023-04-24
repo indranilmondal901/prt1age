@@ -1,0 +1,45 @@
+body{
+    background-color: blue;
+}
+#mainDiv{
+    background-color: aliceblue;
+    border-radius: 2%;
+    height: 60vh;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 5px;
+}
+#heading{
+    text-align: center;
+    background-color: #fff;
+    color: blue;
+    font-size: 2rem;
+    padding: 10px;
+}
+#res{
+    text-align: center;
+    background-color: #fff;
+    color: blue;
+    font-size: 2rem;
+    background-color: aliceblue;
+    margin-top: 30px;
+}
+label{
+    color: blue;
+    font-size: 2rem;
+}
+button{
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    margin-left: 250px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#div1{
+    display: flex;
+    flex-direction: row;
+}
