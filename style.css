@@ -5,7 +5,7 @@ body{
     background-color: aliceblue;
     border-radius: 2%;
     height: 60vh;
-    width: 50%;
+    width: 40%;
     margin: auto;
     margin-top: 50px;
     padding: 5px;
@@ -42,4 +42,11 @@ button{
 #div1{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+input{
+    border: 1px solid blue;
+    height: 40px;
+    width: 100px;
+    text-align: center;
 }
